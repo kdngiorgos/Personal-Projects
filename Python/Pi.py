@@ -1,6 +1,7 @@
 import math
 import random
 
+
 def pi_monte_carlo(num_samples):
     inside_circle = 0
     for i in range(100):
@@ -12,6 +13,7 @@ def pi_monte_carlo(num_samples):
         print( str(i) + "%" )
     return (inside_circle / num_samples) * 0.04
 
+print("Approximating pi using Monte Carlo method")
 print("How many samples do you want to use?")
 num_samples = int(input())
 print("Calculating pi using Monte Carlo method...")
